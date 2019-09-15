@@ -6,27 +6,31 @@
         <h1>E-cars</h1>
         <p class="lead">Choose your private car reservation service</p>
         <p><a href="https://asp.net" class="btn btn-primary btn-lg">Details &raquo;</a></p>
+        @if (User.Identity.IsAuthenticated)
+        {
         <p><a href="https://asp.net" class="btn btn-primary btn-lg">Booking &raquo;</a></p>
+        }
     </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Register</h2>
+        <h2>Recommendation</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            cheapest price, best service
+            get today's high recommended car rental price
         </p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Booking</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <h2>Popular driver</h2>
+        <p>best service provided driver
+            gold medel driver
+        </p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Support</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p>encount problem call customer service, Please</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
